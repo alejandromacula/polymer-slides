@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="es">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Aplicaciones en la web moderna</title>
+
+		<meta name="description" content="A slideout menu for reveal.sj, a framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Greg Denehy">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+		<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+
+
+		<!--[if lt IE 9]>
+		<script src="reveal.js/lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+		<style>
+			.reveal .slide-number {
+				font-size: 0.6em;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section id="home">
+					<h1>Construyendo aplicaciones en la web moderna</h1>
+					<h3>#UseThePlatform</h3>
+					<p>
+						<small>Creado por <a href="https://github.com/alejandromacula">Alejandro Macula</a> / <a href="http://twitter.com/alejandromacula">@alejandromacula</a></small>
+					</p>
+				</section>
+
+				<section id="introduction">
+					<section>
+						<h1><a href="https://www.polymer-project.org">Polymer</a></h1>
+					</section>
+					<section>
+						<h2>Objetivo</h2>
+						Proveer herramientas y librerías usando las ultimas características de la plataforma web para construir <a>la próxima generación de aplicaciones</a>.
+					</section>
+					<section>
+						<h2>Objetivo</h2>
+						Proveer herramientas y librerías usando las ultimas características de la plataforma web para construir <a>Progresive Web Apps</a>.
+					</section>
+				</section>
+
+				<section data-menu-title="Opening the menu">
+					<section>
+						<h2>Progresive Web Apps</h2>
+					</section>
+				
+					<section>
+						<h3>Características de las aplicaciones <a>web</a>.</h3>
+				        <ul>
+				        	<li><h4>Linkeables</h4></li>
+				        	<li><h4>Indexables</h4></li>
+				        	<li><h4>Multiplataforma</h4></li>
+				        	<li><h4>Fáciles de actualizar</h4></li>
+				        </ul>
+					</section>
+					<section>
+						<h3>Características de las <a>Nativas</a></h3>
+				        <ul>
+				        	<li><h4>Offline</h4></li>
+				        	<li><h4>Acceso al hardware</h4></li>
+				        	<li><h4>Carga inmediata</h4></li>
+				        	<li><h4>Notificaciones push</h4></li>
+				        </ul>
+					</section>
+					<section>
+						<h3>Diferencia entre Apps Nativas y Progresive Web Apps</h3>
+				        <ul>
+				        	<li><h4>Escritas en código HTML, CSS y JAVASCRIPT</h4></li>
+				        	<li><h4>No requiere instalación</h4></li>
+				        	<li><h4>No tienen acceso a todo el hardware</h4></li>
+				        </ul>
+					</section>
+					<section>
+						<h3>Características de las <a>Progresive Web Apps</a></h3>
+				        
+					</section>
+					<section data-background="#c0153c">
+						<h1><i class="fa fa-globe fa-lg"></i></h1>
+						<h3>Acceso Offline</h3>
+					</section>
+					<section data-background="#c0153c">
+						<h4>ServiceWorkers</h4>
+					</section>
+					<section data-background="#c0153c">
+						<h4>Offline First</h4>
+					</section>
+					<section data-background="#1f86f7">
+						<h1><i class="fa fa-archive fa-lg"></i></h1>
+						<h3>Instalación local</h3>
+					</section>
+					<section data-background="#1f86f7">
+						<img src="images/manifest.png" alt="workflow">
+					</section>
+					<section data-background="#1f86f7">
+						<img style="width: 35%;" src="images/agregar-inicio.png" alt="agregar al inicio">
+					</section>
+					<section data-background="#a615c0">
+						<h1><i class="fa fa-bolt fa-lg"></i></h1>
+						<h3>Carga inmediata</h3>
+					</section>
+					<section data-background="#a615c0">
+						<img style="width: 75%;" src="images/app-shell.png" alt="app shell">
+					</section>
+					<section data-background="#15c042">
+						<h1><i class="fa fa-bell-o fa-lg"></i></h1>
+						<h3>Notificaciones Push</h3>
+					</section>
+					<section data-background="#15c042">
+						<h2>Serviceworkers corriendo en background</h2>
+					</section>
+					<section data-background="#00a8b9">
+						<h1><i class="fa fa-video-camera fa-lg"></i></h1>
+						<h3>Acceso al hardware</h3>
+					</section>
+					<section data-background="#00a8b9">
+						<h4>Acceso a funciones nativas a través de html5</h4>
+				        <ul>
+				        	<li><h5>Cámara</h5></li>
+				        	<li><h5>Gps</h5></li>
+				        	<li><h5>Sensores de iluminación</h5></li>
+				        	<li><h5>Bases de datos internas</h5></li>
+				        	<li><h5>Etc</h5></li>
+				        </ul>
+					</section>
+					<section data-background="#b72121">
+						<h1><i class="fa fa-mobile-phone fa-lg"></i></h1>
+						<h3>Diseño responsive</h3>
+					</section>
+					<section data-background="#b72121">
+						<h4>Material Design</h4>
+					</section>
+				</section>
+
+
+				<section data-menu-title="Using the slide number">
+					<section id="polymer-library" class="present" style="top: 185.5px; display: block;" data-node-uid="4">
+			          <h2>¿Qué es Polymer?</h2>
+			        </section>
+					<section id="polymer-library" class="present" style="top: 185.5px; display: block;" data-node-uid="4">
+			          <h2>Una biblioteca</h2>
+			          <h4>Conjunto de características para la creación de <code>custom elements</code>.</h4>
+			          <p>Diseñada para hacer más fácil y rápido el desarrollo de componentes.</p>
+			        </section>
+			        <section class="present" style="top: 11.5px; display: block;" data-node-uid="5">
+			          <h3>Conceptos</h3>
+			          <div class="fragment visible" data-fragment-index="0">
+			            <h5><a>Web components</a></h5>
+			            <p>Enstándares que te permiten construir nuevos componentes.</p>
+			            <p>Mucho código y mucho trabajo.</p>
+			          </div>
+			          <div class="fragment visible" data-fragment-index="1">
+			            <h5><a>Biblioteca Polymer</a></h5>
+			            <p>Sintaxis declarativa, menos código y más sencillo.</p>
+			            <p>Añade características: plantillas, enlace de datos bidireccional y observación de propiedades.</p>
+			          </div>
+			          <div class="fragment visible" data-fragment-index="2">
+			            <h5><a>Custom elements</a></h5>
+			            <p>Elementos construidos con Polymer.</p>
+			          </div>
+			        </section>
+			        <section>
+			        	<h2>Características</h2>
+			        	<ul>
+			        		<li>Instanciación usando un constructor o document.createElement.</li>
+			        		<li>Configuración usando atributos o propiedades.</li>
+			        		<li>Contiene un DOM local dentro de cada instancia.</li>
+			        		<li>Responde a cambios en propiedades y atributos.</li>
+			        		<li>Estilado con los internos por defecto o desde fuera.</li>
+			        		<li>Responde a métodos que lo manipulan internamente.</li>
+			        	</ul>
+			        </section>
+			        <section>
+			        	<h2>Ventajas</h2>
+			        	<ul>
+			        		<li>Utiliza el core del browser para funcionar.</li>
+			        		<li>Utiliza un estándar ya existente.</li>
+			        		<li>Al ser un estándar, puede incluirse en otro tipo de librerias como Angular.</li>
+			        		<li>Es muy liviano</li>
+			        		<li>Indexaxión mucho mejor</li>
+			        	</ul>
+			        </section>
+			        <section id="example">
+          <h2>Ejemplo</h2>
+          <pre style="font-size: 15px;"><code data-trim>&lt;dom-module id="elemento-saludar"&gt
+  &lt;template&gt
+    &lt;style&gt/* Reglas CSS para tu elemento */&lt;/style&gt;
+    &lt;!-- DOM local para tu elemento y data binding --&gt;
+    &lt;div&gt{{saludo}}&lt;/div&gt;
+  &lt;/template&gt;
+  &lt;script&gt;
+    // Registro del elemento
+    Polymer({
+      is: "elemento-saludar",
+      // Añadir propiedades y métodos al prototipo del elemento
+      properties: {
+        // Declarar propiedades para la API pública del elemento
+        saludo: {
+          type: String,
+          value: "¡Hola!"
+        }
+      }
+    });
+  &lt;/script&gt;
+&lt;/dom-module&gt;</code></pre>
+        </section>
+				</section>
+
+
+
+				<section>
+        <section id="registrar-componente">
+          <h1>Registrar un componente</h1>
+        </section>
+
+        <section>
+          <h2>Función Polymer</h2>
+          <ul>
+            <li><strong>Parámetro</strong>: Prototipo del componente
+              <ul>
+                <li>Propiedad <code>is</code> obligatoria</li>
+                <li>Nombre del componente debe contener un guión (-)</li>
+              </ul>
+            </li>
+            <li><strong>Devuelve</strong>: Constructor del componente</li>
+          </ul>
+          <pre><code>// Registrar un elemento
+var MiSaludo = Polymer({is: 'elemento-saludar'});
+
+// Crear una instancia con createElement:
+var el1 = document.createElement('elemento-saludar');
+
+// ... o con el constructor:
+var el2 = new MiSaludo();</code></pre>
+        </section>
+        
+
+		<section>
+          <h2>Extender elementos HTML nativos</h2>
+          <ul>
+            <li>Solo nativos (input, buton, etc..).</li>
+            <li>Elementos personalizados en futuras versiones</li>
+            <li>Se llaman: elementos personalizados de extensión de tipo (<i>type extension custom elements</i>)</li>
+          </ul>
+          <pre><code>var MyInput = Polymer({
+  is: 'my-input',
+  // Extiende el elemento input
+  extends: 'input'
+});</code></pre>
+        </section>
+
+      </section>
+
+      <section>
+        <section id="ciclo-vida">
+          <h1>Ciclo de vida</h1>
+        </section>
+
+        <section>
+          <h2>Hooks</h2>
+          <p>Implementa las funciones estandar acortadas</p>
+          <ul>
+            <li><code>created</code> en lugar de <code>createdCallback</code></li>
+            <li><code>attached</code> en lugar de <code>attachedCallback</code></li>
+            <li><code>detached</code> en lugar de <code>detachedCallback</code></li>
+            <li><code>attributeChanged</code> en lugar de <code>attributeChangedCallback</code></li>
+          </ul>
+          <p>Añade una extra, <code>ready</code>, que se lanza cuando Polymer ha terminado de crear e inicializar el DOM local</p>
+        </section>
+
+        <section>
+          <h2>Orden de inicialización</h2>
+          <ol>
+            <li>created callback</li>
+            <li>local DOM initialized</li>
+            <li>ready callback</li>
+            <li>factoryImpl callback</li>
+            <li>attached callback</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Eventos</h2>
+          <pre><code><dom-module id="x-custom">
+  <template>
+    <button on-tap="handleTap">Kick Me</button>
+  </template>
+  <script>
+    Polymer({
+      is: 'x-custom',
+      handleTap: function() {
+        alert('Ow!');
+      }
+    });
+  </script>
+</dom-module></code></pre>
+        </section>
+        <section>
+          <h2>Listeners</h2>
+          <pre style="font-size: 15px;"><code><dom-module id="event-retargeting">
+  <template>
+    <button id="myButton">Click Me</button>
+  </template>
+
+  <script>
+    Polymer({
+
+        is: 'event-retargeting',
+
+        listeners: {
+          'click': 'handleClick',
+        },
+
+        handleClick: function(e) {
+          console.info(e.target.id + ' was clicked.');
+        }
+      });
+  </script>
+</dom-module></code></pre>
+        </section>
+        <section>
+          <h2>Observers</h2>
+          <pre style="font-size: 15px;"><code>Polymer({
+      is: 'prueba-app',
+      properties: {
+        email: {
+          type: String,
+          value: "default",
+          observer:"_emailObserver"
+        },
+      },
+      _emailObserver: function(){
+        console.log(this.email);
+      }
+    });</code></pre>
+        </section>
+
+      </section>
+
+		<section>
+			<section id="data-binding">
+				<h1>Data binding</h1>
+				<blockquote>
+					"Data binding binds a property or sub-property of a custom element (the host element) to a property or attribute of an element in its local DOM (the child or target element)." -<a href="https://www.polymer-project.org/1.0/docs/devguide/data-binding.html"> Polymer guides</a>
+				</blockquote>
+			</section>
+
+				<section id="data-binding-types-index" style="text-align: left;">
+					<h1>Tipos de binding</h1>
+					<ul>
+						<li><a href="04-binding-interoperabilidad/#/types-annotations">Anotaciones</a></li>
+						<li><a href="04-binding-interoperabilidad/#/types-text">Text content</a></li>
+						<li><a href="04-binding-interoperabilidad/#/types-compound">Compuestas (Nuevo)</a></li>
+						<li><a href="04-binding-interoperabilidad/#/types-sub-properties">Sub propiedades</a></li>
+					</ul>
+				</section>
+			<section id="types-annotations" style="text-align: left;">
+					<h2>Anotaciones</h2>
+					<p>Las anotaciones son propiedades o subpropiedades encerradas entre "[[]]" o "{{}}", ligadas a un atributo de otro componente.</p>
+					<ul style="text-align: left;">
+						<li>
+							<p><b>[[]]:</b> Representa data binding unidireccional</p>
+
+						</li>
+						<li>
+							<p><b>{{}}:</b> Representa data binding bidireccional</p>
+
+						</li>
+					</ul>
+					<pre style="font-size: 15px;">
+						<code>
+<car-element wheels-number=[[wheelsNumber]]></car-element>
+						</code>
+					</pre>
+					<pre style="font-size: 15px;">
+						<code>
+<car-list cars={{cars}}></car-list>
+						</code>
+					</pre>
+				</section>
+      <section>
+      	<h2>Ejemplo</h2>
+      	<pre style="font-size: 15px;"><code><dom-module id="user-view">
+  <template>
+  <!-- Bindeo unidireccional -->
+    <div>[[name]]</div>
+
+  <!-- Bindeo bidireccional -->
+    <paper-input label="ingrese su nombre" value="{{name}}"></paper-input>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'user-view',
+      properties: {
+        name: String
+      }
+    });
+  </script>
+</dom-module>
+
+<!-- usage -->
+<user-view name="Samuel"></user-view></code></pre>
+      </section>
+</section>
+		<section>
+	
+      	<section>
+      		<h2>Polymer App Toolbox</h2>
+      		 <ul>
+	      	 	<li>Layout</li>
+	  	 		<li>Routing</li>
+	  	 		<li>Localization</li>
+	  	 		<li>Storage</li>
+	  	 		<li>Cli</li>
+	      	 </ul>
+	      </section>
+	      <section>
+	      <h3>Layout</h3>
+	      <img style="height: 250px;" src="images/drawer-layout.png" alt="app drawer">
+	      	<pre style="font-size: 15px;">
+	      		<code><app-drawer-layout>
+    <app-drawer>
+      <app-toolbar>App name</app-toolbar>
+    </app-drawer>
+    <app-header-layout>
+      <app-header fixed effects="waterfall">
+        <app-toolbar>
+          <paper-icon-button icon="menu" drawer-toggle></paper-icon-button>
+          <div spacer title>My Drive</div>
+        </app-toolbar>
+      </app-header>
+      <sample-content size="100"></sample-content>
+    </app-header-layout>
+  </app-drawer-layout></code>
+	      	</pre>
+	      </section>
+	      <section>
+	      <h3>Routing</h3>
+	      	<img src="images/routing.png" alt="routing">
+	      </section>
+	      <section>
+	      	<h3>app-localize-behavior</h3>
+	      	<pre>
+	      		<code><dom-module id="x-app">
+   <template>
+     <div>{{localize('hello', 'Batman')}}</div>
+   </template>
+ </dom-module></code>
+	      	</pre>
+	      	<pre  style="font-size: 15px;">
+	      		<code>
+ Polymer({
+   is: "x-app",
+   behaviors: [
+     Polymer.AppLocalizeBehavior
+   ],
+   properties: {
+     language: {
+       value: 'en'
+     },
+     resources: {
+       value: function() {
+         return {
+           'en': { 'hello': 'My name is {name}.' },
+           'fr': { 'hello': "Je m'apelle {name}." }
+         }
+} }
+} });</code>
+	      	</pre>
+	      </section>
+	      <section>
+	      	<h3>app-storage</h3>
+	      	<img src="images/app-storage.png" alt="storage">
+	      </section>
+	      <section>
+	      	<h3>Cli</h3>
+	      	<img src="images/cli.png" alt="cli">
+	      </section>
+        </section>
+
+        <section>
+        	<h1>EJEMPLOS</h1>
+        </section>
+        <section>
+        	<h1>Gracias!!</h1>
+        </section>
+			</div>
+
+		</div>
+
+		<script src="reveal.js/lib/js/head.min.js"></script>
+		<script src="reveal.js/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				slideNumber: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				menu: {
+					markers: true,
+					openSlideNumber: true,
+					themes: [
+						{ name: 'Black', theme: 'reveal.js/css/theme/black.css' },
+						{ name: 'White', theme: 'reveal.js/css/theme/white.css' },
+						{ name: 'League', theme: 'reveal.js/css/theme/league.css' },
+						{ name: 'Sky', theme: 'reveal.js/css/theme/sky.css' },
+						{ name: 'Beige', theme: 'reveal.js/css/theme/beige.css' },
+						{ name: 'Simple', theme: 'reveal.js/css/theme/simple.css' },
+						{ name: 'Serif', theme: 'reveal.js/css/theme/serif.css' },
+						{ name: 'Blood', theme: 'reveal.js/css/theme/blood.css' },
+						{ name: 'Night', theme: 'reveal.js/css/theme/night.css' },
+						{ name: 'Moon', theme: 'reveal.js/css/theme/moon.css' },
+						{ name: 'Solarized', theme: 'reveal.js/css/theme/solarized.css' }
+			        ],
+			        custom: [
+			            { title: 'Custom', icon: '<i class="fa fa-bookmark">', src: 'links.html' },
+			        ]
+				},
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'reveal.js/plugin/notes/notes.js', async: true },
+					{ src: 'reveal.js-menu/menu.js', async: true }
+				]
+			});
+		</script>
+
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-66860273-1', 'auto');
+			ga('send', 'pageview');
+
+			Reveal.addEventListener( 'slidechanged', function( event ) {
+				var loc = (event.indexv > 0 ? event.indexh+'' : event.indexh+'.'+event.indexv);
+				ga('send', 'event', 'slide', 'changed', loc);
+			} );
+		</script>
+
+	</body>
+</html>
+
